@@ -1,0 +1,93 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+/// Mixin pour les flexbox
+@mixin flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/// Mixin pour les flexbox aside
+@mixin flexbox--aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// Mixin pour les sections
+@mixin flexbox--section{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+/// Mixin pour les box-shadow
+@mixin box-shadow {
+  box-shadow: 0 2px 6px 0 rgba(133, 131, 133, 0.75);
+}
+
+/// Mixin pour les transform
+@mixin transform--scale1 {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+@mixin transition {
+  transition: 0.3s ease-in-out .1s;
+  -webkit-transition: 0.3s ease-in-out .1s;
+  -moz-transition: 0.3s ease-in-out .1s;
+  -ms-transition: 0.3s ease-in-out .1s;
+  -o-transition: 0.3s ease-in-out .1s;
+}
+@mixin transform--scale11 {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+
+@mixin border-radius {
+  border-radius: 50px;
+}
+    
+

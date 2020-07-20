@@ -1,0 +1,25 @@
+
+  
+#container__menu--lapalettedugout{
+    width: 80%;
+    margin: auto;
+    // @include flexbox;
+    @include box-shadow;
+    margin-bottom: 10vh;
+    line-height: 2;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#lapalettedugout h3{
+    background: linear-gradient(90deg, #5ea758, #d0fea2);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 3rem;
+}
+#container__menu--lapalettedugout span{
+    float: right;
+}    
+
+

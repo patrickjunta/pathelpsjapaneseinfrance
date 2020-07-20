@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,CAAC,OAAO,CAAC,mBAAmB,CAAA;EACzC,WAAW,EAAE,oBAAoB;CACpC",
+    "sources": [
+        "le-chic-a-la-francaise.scss"
+    ],
+    "names": [],
+    "file": "le-chic-a-la-francaise.css"
+}

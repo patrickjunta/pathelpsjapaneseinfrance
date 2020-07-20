@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,mBAAmB,CAAC,EAAE,CAAA;EAClB,WAAW,EAAE,yBAAyB;CACzC",
+    "sources": [
+        "le-chic-a-la-francaise--poster.scss"
+    ],
+    "names": [],
+    "file": "le-chic-a-la-francaise--poster.css"
+}

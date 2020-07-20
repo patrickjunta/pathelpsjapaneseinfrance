@@ -1,0 +1,43 @@
+
+
+#container__menu--lanoteenchantee{
+  // @include flexbox;
+  width: 80%;
+  margin: auto;
+  @include box-shadow;
+  background: #fcdfdb;
+  margin-bottom: 10vh;
+  font-family: "Devonshire", cursive;
+  line-height: 2;
+}
+
+#container__menu--lanoteenchantee h3 {
+  font-size: 44px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+#container__menu--lanoteenchantee h4 {
+  width: 33%;
+  text-align: center;
+}
+
+.menu__sub--title{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#container__menu--lanoteenchantee p {
+  width: 100%;
+  // font-family: "Montserrat", sans-serif;
+}
+
+.lanoteenchantee--flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.lanoteenchantee--flex span{
+  float: right;
+}

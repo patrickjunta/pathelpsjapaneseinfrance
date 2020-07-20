@@ -1,0 +1,152 @@
+
+#lechicalafrancaise{
+    font-family: 'Roboto Slab', serif;
+}
+
+#container__menu--lechicalafrancaise h3{
+    background: linear-gradient(90deg, #cb7d22, #c6a6fd);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+
+}
+
+#container__menu--lechicalafrancaise{
+  font-family: 'Roboto Slab', serif;
+  width: 80%;
+  margin: auto;
+  // @include flexbox;
+  @include box-shadow;
+  background: #fff5fe;
+  margin-bottom: 10vh;
+  overflow: hidden;
+  line-height: 2;
+}
+
+#lechicalafrancaise--entree{
+    // text-align: center; 
+    color: #c67412;
+}
+#lechicalafrancaise--main{
+  color: #a56799;
+
+}
+#lechicalafrancaise--dessert{
+  color: #6e4ccc;
+}
+
+#lechicalafrancaise section {
+  @include flexbox--section;
+}
+
+.lechicalafrancaise--flex span{
+    float: right;
+}
+
+
+.triangle--left{
+  display: flex;
+  flex-direction: column;
+}
+#triangle-1--orange {
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 5px solid #c67412;
+  }
+  
+#triangle-2--orange {
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 5px solid #c67412;
+  }
+
+.triangle--right{
+    display: flex;
+    flex-direction: column;
+  }
+
+#triangle-3--orange {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 5px solid #c67412;
+  }
+  
+  #triangle-4--orange {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 5px solid #c67412;
+  }
+
+#triangle-1--purple {
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 5px solid #a56799;
+  }
+  
+#triangle-2--purple {
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 5px solid #a56799;
+  }
+
+#triangle-3--purple {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 5px solid #a56799;
+  }
+  
+  #triangle-4--purple {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 5px solid #a56799;
+  }
+#triangle-1--blue {
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 5px solid #6e4ccc;
+  }
+  
+#triangle-2--blue {
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 5px solid #6e4ccc;
+  }
+
+#triangle-3--blue {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 5px solid #6e4ccc;
+  }
+  
+  #triangle-4--blue {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 5px solid #6e4ccc;
+  }
+  

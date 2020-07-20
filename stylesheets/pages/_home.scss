@@ -1,0 +1,341 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.menu--card {
+  @include box-shadow;
+  @include flexbox;
+  width: 46%;
+  margin: 1% 2%;
+  width: 30%;
+  height: 30vh;
+  @include transform--scale1;
+  @include transition;
+}
+.menu--card a {
+  text-decoration: none;
+}
+.menu--card:focus {
+  text-decoration: none;
+}
+.menu--card:hover {
+  opacity: 0.7;
+}
+.menu--card h2:hover {
+  text-align: center;
+  @include transform--scale11;
+}
+
+i {
+  background: linear-gradient(90deg, #f15861, #f78f6a);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+main {
+  width: 100%;
+}
+
+section {
+  min-height: 50vh;
+  @include flexbox--section;
+ }
+
+//  #lechicalafrancaise section {
+//   @include flexbox--section;
+// }
+
+nav#parent {
+  min-height: 65vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.menu--title, h2 {
+  background: none;
+  text-align: center;
+}
+.menu--title, a {
+  text-decoration: none;
+  color: black;
+  a:hover {
+    text-decoration: none;
+  }
+  a:focus {
+    text-decoration: none;
+  }
+}
+
+
+.menu__title--h4 {
+  background: linear-gradient(to top,black 0%, black 5%, transparent 10%)
+    no-repeat left bottom/0 100%;
+  transition: background-size 1000ms;
+  -webkit-transition: background-size 1000ms;
+  -moz-transition: background-size 1000ms;
+  -ms-transition: background-size 1000ms;
+  -o-transition: background-size 1000ms;
+}
+h4:hover {
+  background-size: 100% 100%;
+}
+
+#lanoteenchantee--card {
+  background: #fcdfdb;
+}
+
+#lanoteenchantee--card h2 {
+  color: #492025;
+  font-family: "Devonshire", cursive;
+}
+#lanoteenchantee--card span {
+  color: #492025;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 600;
+}
+
+#lechicalafrancaise--card {
+  background: #fff5fe;
+}
+#lechicalafrancaise--card h2 {
+  background: linear-gradient(90deg, #d8852e, #905bfd);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+#lechicalafrancaise--card a span {
+  -webkit-text-fill-color: initial;
+  color: #c77412;
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+}
+
+#ledelicedespapilles--card {
+  background: #f9f9f9;
+}
+#ledelicedespapilles--card h2 {
+  background: linear-gradient(#1b46e2, #83a3f0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#lapalettedugout {
+  background: #fdfffd;
+}
+#lapalettedugout--card h2 {
+  background: linear-gradient(90deg, #5ea758, #d0fea2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Kaushan Script", cursive;
+}
+
+aside {
+  font-size: 2rem;
+  @include flexbox--aside;
+  width: 40%;
+  max-height: 8vh;
+  border-radius: 50px;
+  background: color(primary);
+  color: color(secondary);
+  margin-left: 30%;
+}
+
+.dotLoadingAnimation {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.dotLoadingAnimation div {
+  position: absolute;
+  top: 50%;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: color(secondary);
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.dotLoadingAnimation div:nth-child(1) {
+  left: 8px;
+  animation: dotAppear 0.6s infinite;
+  -webkit-animation: dotAppear 0.6s infinite;
+}
+.dotLoadingAnimation div:nth-child(2) {
+  left: 8px;
+  animation: dotToRight 0.6s infinite;
+  -webkit-animation: dotToRight 0.6s infinite;
+}
+.dotLoadingAnimation div:nth-child(3) {
+  left: 32px;
+  animation: dotToRight 0.6s infinite;
+  -webkit-animation: dotToRight 0.6s infinite;
+}
+.dotLoadingAnimation div:nth-child(4) {
+  left: 56px;
+  animation: dotDisappear 0.6s infinite;
+  -webkit-animation: dotDisappear 0.6s infinite;
+}
+@keyframes dotAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes dotDisappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes dotToRight {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+@keyframes shake {
+  from {
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+  }
+  to {
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    transform-origin: center center;
+  }
+}
+
+
+//mediaqueries tablette
+@media only screen and (min-width : 576px) and (max-width: 768px) {
+  main {
+    margin-top: 5%;
+  }
+  nav#parent {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  aside{
+    margin-top: 5%;
+  }
+}
+
+//mediaqueries smartphone
+@media only screen and (min-width : 320px) and (max-width: 576px) {
+
+ nav#parent {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+  
+  .menu--card{
+    width: 70%;
+    height: 60%;
+    margin-top: 5vh;
+  }
+  
+  .container__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  span{
+    text-align: center;
+    width: 100%;
+  }
+
+    aside {
+      font-size: 2rem;
+      @include flexbox--aside;
+      width: 100%;
+      max-height: 10vh;
+      border-radius: 50px;
+      background: color(primary);
+      color: color(secondary);
+      margin: 10% 0 30% 0;
+    }
+  footer{
+    position: fixed;
+    bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 9vh;
+    max-height: 9vh;
+    background-color: color(primary);
+  }
+
+  footer a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 5% 10%;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+      text-decoration: none;
+      animation: shake .2s ease-in-out .2s infinite alternate;
+      -webkit-animation: shake .2s ease-in-out .2s infinite alternate;
+  }
+
+  footer a:focus{
+      text-decoration: none;
+  }
+
+  img{
+    width: 35%;
+  }
+  h4{
+    margin: 5%;
+  }
+  h3{
+    margin: 5%;
+  }
+  h2{
+    text-align: center;
+    margin: 5%;
+  }
+
+}
