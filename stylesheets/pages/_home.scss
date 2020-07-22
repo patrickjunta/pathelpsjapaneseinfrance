@@ -2,26 +2,25 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
-.menu--card {
+.card__home {
   @include box-shadow;
   @include flexbox;
-  width: 46%;
   margin: 1% 2%;
-  width: 30%;
+  width: 80%;
   height: 30vh;
   @include transform--scale1;
   @include transition;
 }
-.menu--card a {
+.card__home a {
   text-decoration: none;
 }
-.menu--card:focus {
+.card__home:focus {
   text-decoration: none;
 }
-.menu--card:hover {
+.card__home:hover {
   opacity: 0.7;
 }
-.menu--card h2:hover {
+.card__home h2:hover {
   text-align: center;
   @include transform--scale11;
 }
@@ -42,17 +41,20 @@ section {
   @include flexbox--section;
  }
 
-//  #lechicalafrancaise section {
+ img {
+  width: 30%;
+  height: 30%;
+ }
+ p{
+   text-align: center;
+ }
+//  #teaching section {
 //   @include flexbox--section;
 // }
 
 nav#parent {
+  @include flexbox;
   min-height: 65vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap;
 }
 
 .menu--title, h2 {
@@ -84,24 +86,25 @@ h4:hover {
   background-size: 100% 100%;
 }
 
-#lanoteenchantee--card {
-  background: #fcdfdb;
-}
+// #lanoteenchantee--card {
+//   background: #fcdfdb;
+//   @include flexbox;
+// }
 
-#lanoteenchantee--card h2 {
-  color: #492025;
-  font-family: "Devonshire", cursive;
-}
-#lanoteenchantee--card span {
-  color: #492025;
-  font-family: "Kaushan Script", cursive;
-  font-weight: 600;
-}
+// #lanoteenchantee--card h2 {
+//   color: #492025;
+//   font-family: "Devonshire", cursive;
+// }
+// #lanoteenchantee--card span {
+//   color: #492025;
+//   font-family: "Kaushan Script", cursive;
+//   font-weight: 600;
+// }
 
-#lechicalafrancaise--card {
+#teaching--card {
   background: #fff5fe;
 }
-#lechicalafrancaise--card h2 {
+#teaching--card h2 {
   background: linear-gradient(90deg, #d8852e, #905bfd);
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -109,17 +112,17 @@ h4:hover {
   font-family: "Montserrat", sans-serif;
   text-align: center;
 }
-#lechicalafrancaise--card a span {
+#teaching--card a span {
   -webkit-text-fill-color: initial;
   color: #c77412;
   font-family: "Roboto Slab", serif;
   font-weight: 500;
 }
 
-#ledelicedespapilles--card {
+#helping--card {
   background: #f9f9f9;
 }
-#ledelicedespapilles--card h2 {
+#helping--card h2 {
   background: linear-gradient(#1b46e2, #83a3f0);
   background-clip: text;
   -webkit-background-clip: text;

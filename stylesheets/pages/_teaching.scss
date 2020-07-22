@@ -1,9 +1,9 @@
 
-#lechicalafrancaise{
+#teaching{
     font-family: 'Roboto Slab', serif;
 }
 
-#container__menu--lechicalafrancaise h3{
+#container__menu--teaching h3{
     background: linear-gradient(90deg, #cb7d22, #c6a6fd);
     background-clip: border-box;
     -webkit-background-clip: text;
@@ -13,11 +13,11 @@
 
 }
 
-#container__menu--lechicalafrancaise{
+#container__menu--teaching{
   font-family: 'Roboto Slab', serif;
   width: 80%;
   margin: auto;
-  // @include flexbox;
+  @include flexbox;
   @include box-shadow;
   background: #fff5fe;
   margin-bottom: 10vh;
@@ -25,25 +25,26 @@
   line-height: 2;
 }
 
-#lechicalafrancaise--entree{
+
+#teaching--entree{
     // text-align: center; 
     color: #c67412;
 }
-#lechicalafrancaise--main{
+#teaching--main{
   color: #a56799;
 
 }
-#lechicalafrancaise--dessert{
+#teaching--dessert{
   color: #6e4ccc;
 }
 
-#lechicalafrancaise section {
+#teaching section {
   @include flexbox--section;
 }
 
-.lechicalafrancaise--flex span{
-    float: right;
-}
+// .teaching--flex span{
+//     float: right;
+// }
 
 
 .triangle--left{

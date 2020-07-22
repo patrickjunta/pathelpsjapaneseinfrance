@@ -443,6 +443,7 @@ body {
 }
 
 header {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -461,17 +462,17 @@ header {
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   max-height: 12vh;
-  background-color: #579c87ff;
+  background-color: #0a8bbe;
 }
 
 header a {
-  color: #fdcb46ff;
+  color: #e0b43b;
   font-size: 2.2rem;
   font-weight: 900;
 }
 
 header a:hover {
-  color: #fdcb46ff;
+  color: #e0b43b;
   text-decoration: none;
 }
 
@@ -491,11 +492,11 @@ footer {
   width: 100%;
   min-height: 8vh;
   max-height: 8vh;
-  background-color: #579c87ff;
+  background-color: #0a8bbe;
 }
 
 footer a {
-  color: #fdcb46ff;
+  color: #e0b43b;
   font-size: 1.4rem;
   font-weight: 600;
   margin: 2%;
@@ -503,20 +504,21 @@ footer a {
 }
 
 footer a:hover {
-  color: #fdcb46ff;
+  color: #e0b43b;
   text-decoration: none;
   animation: shake .2s ease-in-out .2s infinite alternate;
   -webkit-animation: shake .2s ease-in-out .2s infinite alternate;
 }
 
 footer a:focus {
-  color: #fdcb46ff;
+  color: #e0b43b;
   text-decoration: none;
 }
 
-.menu--card {
+.card__home {
   -webkit-box-shadow: 0 2px 6px 0 rgba(133, 131, 133, 0.75);
           box-shadow: 0 2px 6px 0 rgba(133, 131, 133, 0.75);
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -532,9 +534,8 @@ footer a:focus {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 46%;
   margin: 1% 2%;
-  width: 30%;
+  width: 80%;
   height: 30vh;
   transform: scale(1);
   -webkit-transform: scale(1);
@@ -548,19 +549,19 @@ footer a:focus {
   -o-transition: 0.3s ease-in-out .1s;
 }
 
-.menu--card a {
+.card__home a {
   text-decoration: none;
 }
 
-.menu--card:focus {
+.card__home:focus {
   text-decoration: none;
 }
 
-.menu--card:hover {
+.card__home:hover {
   opacity: 0.7;
 }
 
-.menu--card h2:hover {
+.card__home h2:hover {
   text-align: center;
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
@@ -600,23 +601,33 @@ section {
           align-items: stretch;
 }
 
+img {
+  width: 30%;
+  height: 30%;
+}
+
+p {
+  text-align: center;
+}
+
 nav#parent {
-  min-height: 65vh;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 65vh;
 }
 
 .menu--title, h2 {
@@ -651,26 +662,11 @@ h4:hover {
   background-size: 100% 100%;
 }
 
-#lanoteenchantee--card {
-  background: #fcdfdb;
-}
-
-#lanoteenchantee--card h2 {
-  color: #492025;
-  font-family: "Devonshire", cursive;
-}
-
-#lanoteenchantee--card span {
-  color: #492025;
-  font-family: "Kaushan Script", cursive;
-  font-weight: 600;
-}
-
-#lechicalafrancaise--card {
+#teaching--card {
   background: #fff5fe;
 }
 
-#lechicalafrancaise--card h2 {
+#teaching--card h2 {
   background: -webkit-gradient(linear, left top, right top, from(#d8852e), to(#905bfd));
   background: linear-gradient(90deg, #d8852e, #905bfd);
   background-clip: border-box;
@@ -680,18 +676,18 @@ h4:hover {
   text-align: center;
 }
 
-#lechicalafrancaise--card a span {
+#teaching--card a span {
   -webkit-text-fill-color: initial;
   color: #c77412;
   font-family: "Roboto Slab", serif;
   font-weight: 500;
 }
 
-#ledelicedespapilles--card {
+#helping--card {
   background: #f9f9f9;
 }
 
-#ledelicedespapilles--card h2 {
+#helping--card h2 {
   background: -webkit-gradient(linear, left top, left bottom, from(#1b46e2), to(#83a3f0));
   background: linear-gradient(#1b46e2, #83a3f0);
   background-clip: text;
@@ -729,8 +725,8 @@ aside {
   width: 40%;
   max-height: 8vh;
   border-radius: 50px;
-  background: #579c87ff;
-  color: #fdcb46ff;
+  background: #0a8bbe;
+  color: #e0b43b;
   margin-left: 30%;
 }
 
@@ -747,7 +743,7 @@ aside {
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  background: #fdcb46ff;
+  background: #e0b43b;
   -webkit-animation-timing-function: cubic-bezier(0, 1, 1, 0);
           animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
@@ -964,8 +960,8 @@ aside {
     width: 100%;
     max-height: 10vh;
     border-radius: 50px;
-    background: #579c87ff;
-    color: #fdcb46ff;
+    background: #0a8bbe;
+    color: #e0b43b;
     margin: 10% 0 30% 0;
   }
   footer {
@@ -984,7 +980,7 @@ aside {
     width: 100%;
     min-height: 9vh;
     max-height: 9vh;
-    background-color: #579c87ff;
+    background-color: #0a8bbe;
   }
   footer a {
     font-size: 1.5rem;
@@ -1080,11 +1076,11 @@ aside {
   float: right;
 }
 
-#lechicalafrancaise {
+#teaching {
   font-family: 'Roboto Slab', serif;
 }
 
-#container__menu--lechicalafrancaise h3 {
+#container__menu--teaching h3 {
   background: -webkit-gradient(linear, left top, right top, from(#cb7d22), to(#c6a6fd));
   background: linear-gradient(90deg, #cb7d22, #c6a6fd);
   background-clip: border-box;
@@ -1094,10 +1090,26 @@ aside {
   text-align: center;
 }
 
-#container__menu--lechicalafrancaise {
+#container__menu--teaching {
   font-family: 'Roboto Slab', serif;
   width: 80%;
   margin: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-shadow: 0 2px 6px 0 rgba(133, 131, 133, 0.75);
           box-shadow: 0 2px 6px 0 rgba(133, 131, 133, 0.75);
   background: #fff5fe;
@@ -1106,19 +1118,19 @@ aside {
   line-height: 2;
 }
 
-#lechicalafrancaise--entree {
+#teaching--entree {
   color: #c67412;
 }
 
-#lechicalafrancaise--main {
+#teaching--main {
   color: #a56799;
 }
 
-#lechicalafrancaise--dessert {
+#teaching--dessert {
   color: #6e4ccc;
 }
 
-#lechicalafrancaise section {
+#teaching section {
   width: 80%;
   margin: auto;
   display: -webkit-box;
@@ -1134,10 +1146,6 @@ aside {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-}
-
-.lechicalafrancaise--flex span {
-  float: right;
 }
 
 .triangle--left {
@@ -1256,10 +1264,26 @@ aside {
   border-top: 5px solid #6e4ccc;
 }
 
-#container__menu--ledelicedespapilles {
+#container__menu--helping {
   width: 80%;
   margin: auto;
   font-family: 'Dancing Script', cursive;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-shadow: 0 2px 6px 0 rgba(133, 131, 133, 0.75);
           box-shadow: 0 2px 6px 0 rgba(133, 131, 133, 0.75);
   margin-bottom: 10vh;
@@ -1267,7 +1291,7 @@ aside {
   line-height: 2;
 }
 
-#ledelicedespapilles h3 {
+#helping h3 {
   background: -webkit-gradient(linear, left top, left bottom, from(#1b46e2), to(#83a3f0));
   background: linear-gradient(#1b46e2, #83a3f0);
   background-clip: border-box;
@@ -1275,10 +1299,6 @@ aside {
   -webkit-text-fill-color: transparent;
   text-align: center;
   font-size: 3rem;
-}
-
-.ledelicedespapilles--flex span {
-  float: right;
 }
 
 #container__menu--lapalettedugout {

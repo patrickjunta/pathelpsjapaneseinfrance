@@ -1,9 +1,9 @@
 
-#container__menu--ledelicedespapilles{
+#container__menu--helping{
     width: 80%;
     margin: auto;
     font-family: 'Dancing Script', cursive;
-    // @include flexbox;
+    @include flexbox;
     @include box-shadow;
     margin-bottom: 10vh;
     background: #f9f9f9;
@@ -11,7 +11,7 @@
 }
 
 
-#ledelicedespapilles h3{
+#helping h3{
     background: linear-gradient(#1b46e2, #83a3f0);
     background-clip: border-box;
     -webkit-background-clip: text;
@@ -20,6 +20,6 @@
     font-size: 3rem;
 }
 
-.ledelicedespapilles--flex span{
-    float: right;
-}
+// .helping--flex span{
+//     float: right;
+// }
