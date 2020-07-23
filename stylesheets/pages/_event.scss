@@ -1,16 +1,16 @@
 
   
-#container__menu--lapalettedugout{
+#container__menu--event{
     width: 80%;
     margin: auto;
-    // @include flexbox;
+    //@include flexbox;
     @include box-shadow;
     margin-bottom: 10vh;
     line-height: 2;
     font-family: 'Kaushan Script', cursive;
 }
 
-#lapalettedugout h3{
+#event h3{
     background: linear-gradient(90deg, #5ea758, #d0fea2);
     background-clip: border-box;
     -webkit-background-clip: text;
@@ -18,7 +18,7 @@
     text-align: center;
     font-size: 3rem;
 }
-#container__menu--lapalettedugout span{
+#container__menu--event span{
     float: right;
 }    
 

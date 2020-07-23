@@ -698,11 +698,11 @@ h4:hover {
   font-size: 2rem;
 }
 
-#lapalettedugout {
+#event {
   background: #fdfffd;
 }
 
-#lapalettedugout--card h2 {
+#event--card h2 {
   background: -webkit-gradient(linear, left top, right top, from(#5ea758), to(#d0fea2));
   background: linear-gradient(90deg, #5ea758, #d0fea2);
   background-clip: text;
@@ -1094,22 +1094,6 @@ aside {
   font-family: 'Roboto Slab', serif;
   width: 80%;
   margin: auto;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-shadow: 0 2px 6px 0 rgba(133, 131, 133, 0.75);
           box-shadow: 0 2px 6px 0 rgba(133, 131, 133, 0.75);
   background: #fff5fe;
@@ -1268,22 +1252,6 @@ aside {
   width: 80%;
   margin: auto;
   font-family: 'Dancing Script', cursive;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-shadow: 0 2px 6px 0 rgba(133, 131, 133, 0.75);
           box-shadow: 0 2px 6px 0 rgba(133, 131, 133, 0.75);
   margin-bottom: 10vh;
@@ -1301,7 +1269,7 @@ aside {
   font-size: 3rem;
 }
 
-#container__menu--lapalettedugout {
+#container__menu--event {
   width: 80%;
   margin: auto;
   -webkit-box-shadow: 0 2px 6px 0 rgba(133, 131, 133, 0.75);
@@ -1311,7 +1279,7 @@ aside {
   font-family: 'Kaushan Script', cursive;
 }
 
-#lapalettedugout h3 {
+#event h3 {
   background: -webkit-gradient(linear, left top, right top, from(#5ea758), to(#d0fea2));
   background: linear-gradient(90deg, #5ea758, #d0fea2);
   background-clip: border-box;
@@ -1321,7 +1289,7 @@ aside {
   font-size: 3rem;
 }
 
-#container__menu--lapalettedugout span {
+#container__menu--event span {
   float: right;
 }
 
