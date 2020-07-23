@@ -327,8 +327,15 @@ aside {
       text-decoration: none;
   }
 
+  section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
   img{
-    width: 35%;
+    width: 15%;
   }
   h4{
     margin: 5%;
@@ -336,9 +343,139 @@ aside {
   h3{
     margin: 5%;
   }
+
   h2{
     text-align: center;
     margin: 5%;
   }
+  p{
+    line-height: 2;
+  }
+  p#teaching--principal--p{
+    margin-top: -10vh;
+    margin-bottom: 10vh;
+  }
+
+
+  
+.triangle--left{
+  display: none;
+  //display: flex;
+  flex-direction: column;
+}
+#triangle-1--orange {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 5px solid #c67412;
+  }
+  
+#triangle-2--orange {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 5px solid #c67412;
+  }
+
+.triangle--right{
+    display: none;
+    //display: flex;
+    flex-direction: column;
+  }
+
+#triangle-3--orange {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 5px solid #c67412;
+  }
+  
+  #triangle-4--orange {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 5px solid #c67412;
+  }
+
+#triangle-1--purple {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 5px solid #a56799;
+  }
+  
+#triangle-2--purple {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 5px solid #a56799;
+  }
+
+#triangle-3--purple {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 5px solid #a56799;
+  }
+  
+  #triangle-4--purple {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 5px solid #a56799;
+  }
+#triangle-1--blue {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 5px solid #6e4ccc;
+  }
+  
+#triangle-2--blue {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 5px solid #6e4ccc;
+  }
+
+#triangle-3--blue {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 5px solid #6e4ccc;
+  }
+  
+  #triangle-4--blue {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 5px solid #6e4ccc;
+  }
+  
+
 
 }

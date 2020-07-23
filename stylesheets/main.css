@@ -1005,8 +1005,22 @@ aside {
   footer a:focus {
     text-decoration: none;
   }
+  section {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
   img {
-    width: 35%;
+    width: 15%;
   }
   h4 {
     margin: 5%;
@@ -1017,6 +1031,123 @@ aside {
   h2 {
     text-align: center;
     margin: 5%;
+  }
+  p {
+    line-height: 2;
+  }
+  p#teaching--principal--p {
+    margin-top: -10vh;
+    margin-bottom: 10vh;
+  }
+  .triangle--left {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #triangle-1--orange {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 5px solid #c67412;
+  }
+  #triangle-2--orange {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 5px solid #c67412;
+  }
+  .triangle--right {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #triangle-3--orange {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 5px solid #c67412;
+  }
+  #triangle-4--orange {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 5px solid #c67412;
+  }
+  #triangle-1--purple {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 5px solid #a56799;
+  }
+  #triangle-2--purple {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 5px solid #a56799;
+  }
+  #triangle-3--purple {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 5px solid #a56799;
+  }
+  #triangle-4--purple {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 5px solid #a56799;
+  }
+  #triangle-1--blue {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 5px solid #6e4ccc;
+  }
+  #triangle-2--blue {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 5px solid #6e4ccc;
+  }
+  #triangle-3--blue {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 5px solid #6e4ccc;
+  }
+  #triangle-4--blue {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 5px solid #6e4ccc;
   }
 }
 
@@ -1081,6 +1212,7 @@ aside {
 }
 
 #container__menu--teaching h3 {
+  margin: 5vh 0;
   background: -webkit-gradient(linear, left top, right top, from(#cb7d22), to(#c6a6fd));
   background: linear-gradient(90deg, #cb7d22, #c6a6fd);
   background-clip: border-box;
@@ -1100,6 +1232,11 @@ aside {
   margin-bottom: 10vh;
   overflow: hidden;
   line-height: 2;
+}
+
+.teaching .menu__title--h4 {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 #teaching--entree {
@@ -1286,7 +1423,7 @@ aside {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 #container__menu--event span {

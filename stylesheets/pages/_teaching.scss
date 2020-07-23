@@ -4,13 +4,13 @@
 }
 
 #container__menu--teaching h3{
+    margin: 5vh 0;
     background: linear-gradient(90deg, #cb7d22, #c6a6fd);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-
 }
 
 #container__menu--teaching{
@@ -23,6 +23,10 @@
   margin-bottom: 10vh;
   overflow: hidden;
   line-height: 2;
+}
+.teaching .menu__title--h4{
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 
